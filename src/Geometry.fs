@@ -21,43 +21,42 @@ type RotationalAxis =
 /// <summary>
 /// Length dimension annotated with unit-of-measure.
 /// </summary>
-type Length<[<Measure>] 'TUnit> = Length of float<'TUnit>
+type Length<[<Measure>] 'T> = Length of float<'T>
 
 /// <summary>
 /// Width dimension annotated with unit-of-measure.
 /// </summary>
-type Width<[<Measure>] 'TUnit> = Width of float<'TUnit>
+type Width<[<Measure>] 'T> = Width of float<'T>
 
 /// <summary>
 /// Depth dimension annotated with unit-of-measure.
 /// </summary>
-type Depth<[<Measure>] 'TUnit> = Depth of float<'TUnit>
+type Depth<[<Measure>] 'T> = Depth of float<'T>
 
 /// <summary>
 /// Diameter dimension annotated with unit-of-measure.
 /// </summary>
-type Diameter<[<Measure>] 'TUnit> = Diameter of float<'TUnit>
+type Diameter<[<Measure>] 'T> = Diameter of float<'T>
 
 /// <summary>
 /// Perimeter dimension annotated with unit-of-measure.
 /// </summary>
-type Perimeter<[<Measure>] 'TUnit> = Perimeter of float<'TUnit>
+type Perimeter<[<Measure>] 'T> = Perimeter of float<'T>
 
 /// <summary>
 /// Area dimension annotated with unit-of-measure.
 /// Union type represents possible area semantics.
 /// </summary>
-type Area<[<Measure>] 'TUnit> =
-  | CrossSectionalArea of float<'TUnit^2>
-  | SurfaceArea of float<'TUnit^2>
+type Area<[<Measure>] 'T> =
+  | CrossSectionalArea of float<'T^2>
+  | SurfaceArea of float<'T^2>
 
 /// <summary>
 /// Volume dimension annotated with unit-of-measure.
 /// </summary>
-type Volume<[<Measure>] 'TUnit> = Volume of float<'TUnit^3>
+type Volume<[<Measure>] 'T> = Volume of float<'T^3>
 
 /// <summary>
 /// Second moment of area dimension annotated with unit-of-measure.
 /// </summary>
-type SecondMomentOfArea<[<Measure>] 'TUnit> =
-  | SecondMomentOfArea of float<'TUnit^4>
+type SecondMomentOfArea<[<Measure>] 'T> = SecondMomentOfArea of float<'T^4>
