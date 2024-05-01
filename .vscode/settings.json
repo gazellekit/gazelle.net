@@ -16,6 +16,11 @@
     "**/bin": false,
     "**/obj": true
   },
+
+  "[fsharp]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "Ionide.Ionide-fsharp"
+  },
   
   "git.autofetch": true,
   "git.confirmSync": false,
@@ -26,11 +31,6 @@
     "yaml": true,
     "plaintext": false,
     "markdown": false
-  },
-
-  "[fsharp]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "Ionide.Ionide-fsharp"
   },
 
   "powershell.powerShellDefaultVersion": "PowerShell",
